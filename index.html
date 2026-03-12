@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安徽左岸芯慧信息科技有限公司</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+* { font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; -webkit-tap-highlight-color: transparent; box-sizing: border-box; }
+.gradient-text { background: linear-gradient(135deg, #34d399, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-bg { background: linear-gradient(135deg, #0f172a 0%, #064e3b 60%, #0f172a 100%); }
+.card-hover { transition: transform 0.2s, box-shadow 0.2s; }
+@media (hover: hover) { .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,.3); } }
+.nav-bg { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); background: rgba(15,23,42,.95); }
+html { scroll-behavior: smooth; }
+#mobile-menu { display: none; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+#mobile-menu.open { display: flex; max-height: 400px; }
+body { overflow-x: hidden; }
+</style>
+</head>
+<body class="bg-slate-900 text-white">
+<nav class="nav-bg fixed top-0 left-0 right-0 z-50 border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center font-bold text-lg">左</div>
+      <div><div class="font-bold text-sm">安徽左岸芯慧</div><div class="text-xs text-emerald-400">信息科技有限公司</div></div>
+    </div>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#about" class="text-sm text-gray-300 hover:text-emerald-400">关于我们</a>
+      <a href="#features" class="text-sm text-gray-300 hover:text-emerald-400">产品服务</a>
+      <a href="#solutions" class="text-sm text-gray-300 hover:text-emerald-400">解决方案</a>
+      <a href="#contact" class="text-sm text-gray-300 hover:text-emerald-400">联系我们</a>
+      <a href="#contact" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm px-4 py-2 rounded-lg">免费咨询</a>
+    </div>
+    <button id="menu-btn" class="md:hidden p-2 text-white" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path id="menu-icon" d="M4 8h16M4 16h16"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="md:hidden flex-col border-t border-white/10 px-4 py-4 gap-4 bg-slate-900/95">
+    <a href="#about" class="text-gray-300 py-2 text-base" onclick="document.getElementById('mobile-menu').classList.remove('open')">关于我们</a>
+    <a href="#features" class="text-gray-300 py-2 text-base" onclick="document.getElementById('mobile-menu').classList.remove('open')">产品服务</a>
+    <a href="#solutions" class="text-gray-300 py-2 text-base" onclick="document.getElementById('mobile-menu').classList.remove('open')">解决方案</a>
+    <a href="#contact" class="text-gray-300 py-2 text-base" onclick="document.getElementById('mobile-menu').classList.remove('open')">联系我们</a>
+    <a href="#contact" class="bg-emerald-600 text-white text-base px-4 py-3 rounded-lg text-center mt-2" onclick="document.getElementById('mobile-menu').classList.remove('open')">免费咨询</a>
+  </div>
+</nav>
+<section class="hero-bg min-h-screen flex items-center justify-center px-4 pt-20">
+  <div class="max-w-5xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 bg-emerald-900/50 border border-emerald-700/50 rounded-full px-4 py-2 text-sm text-emerald-300 mb-8">● 智慧农业 · 数字乡村 · 科技赋农</div>
+    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">用科技连接<br><span class="gradient-text">每一寸土地</span></h1>
+    <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">安徽左岸芯慧信息科技有限公司，专注农业物联网与智慧农业解决方案，以数字化手段赋能现代农业，助力乡村振兴。</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#features" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl">了解产品服务</a>
+      <a href="#contact" class="border border-emerald-600 text-emerald-400 hover:bg-emerald-900/40 font-semibold px-8 py-4 rounded-xl">免费咨询</a>
+    </div>
+    <div class="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+      <div class="text-center"><div class="text-3xl font-bold text-emerald-400">200+</div><div class="text-sm text-gray-400 mt-1">合作农场</div></div>
+      <div class="text-center"><div class="text-3xl font-bold text-emerald-400">50+</div><div class="text-sm text-gray-400 mt-1">覆盖县市</div></div>
+      <div class="text-center"><div class="text-3xl font-bold text-emerald-400">99.9%</div><div class="text-sm text-gray-400 mt-1">系统稳定性</div></div>
+    </div>
+  </div>
+</section>
+<section id="features" class="py-24 px-4 bg-slate-800/50">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16"><h2 class="text-3xl font-bold mb-4">核心产品与服务</h2><p class="text-gray-400">覆盖农业生产全流程的数字化解决方案</p></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card-hover bg-slate-800 border border-white/5 rounded-2xl p-6"><div class="text-4xl mb-4">🌱</div><h3 class="font-semibold text-lg mb-2">精准农业监测</h3><p class="text-gray-400 text-sm leading-relaxed">实时采集土壤墒情、气象数据，AI分析作物生长状态，提供精准施肥灌溉建议。</p></div>
+      <div class="card-hover bg-slate-800 border border-white/5 rounded-2xl p-6"><div class="text-4xl mb-4">📡</div><h3 class="font-semibold text-lg mb-2">农业物联网</h3><p class="text-gray-400 text-sm leading-relaxed">基于NB-IoT/LoRa无线传感网络，低成本覆盖广阔农田，数据实时上云。</p></div>
+      <div class="card-hover bg-slate-800 border border-white/5 rounded-2xl p-6"><div class="text-4xl mb-4">🚁</div><h3 class="font-semibold text-lg mb-2">无人机巡检</h3><p class="text-gray-400 text-sm leading-relaxed">无人机航拍与AI图像分析结合，快速识别病虫害、倒伏等异常情况。</p></div>
+      <div class="card-hover bg-slate-800 border border-white/5 rounded-2xl p-6"><div class="text-4xl mb-4">💧</div><h3 class="font-semibold text-lg mb-2">智能灌溉系统</h3><p class="text-gray-400 text-sm leading-relaxed">根据土壤墒情和作物需水模型自动控制灌溉，节水30%以上。</p></div>
+      <div class="card-hover bg-slate-800 border border-white/5 rounded-2xl p-6"><div class="text-4xl mb-4">📊</div><h3 class="font-semibold text-lg mb-2">农业大数据平台</h3><p class="text-gray-400 text-sm leading-relaxed">汇聚多维农业数据，可视化展示，为农业决策提供科学数据支撑。</p></div>
+      <div class="card-hover bg-slate-800 border border-white/5 rounded-2xl p-6"><div class="text-4xl mb-4">🌾</div><h3 class="font-semibold text-lg mb-2">溯源管理系统</h3><p class="text-gray-400 text-sm leading-relaxed">全程记录农产品种植、采收、流通信息，打造可信农产品溯源体系。</p></div>
+    </div>
+  </div>
+</section>
+<section id="solutions" class="py-24 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16"><h2 class="text-3xl font-bold mb-4">行业解决方案</h2><p class="text-gray-400">针对不同农业场景，提供定制化数字转型方案</p></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="card-hover bg-gradient-to-br from-slate-800 to-slate-900 border border-emerald-900/30 rounded-2xl p-8"><span class="inline-block bg-emerald-900/60 text-emerald-400 text-xs px-3 py-1 rounded-full mb-4">粮食安全</span><h3 class="font-bold text-xl mb-3">大田种植解决方案</h3><p class="text-gray-400 leading-relaxed">适用于小麦、水稻、玉米等粮食作物种植，全程数字化管理，助力粮食安全。</p><div class="mt-6 text-emerald-400 text-sm">了解详情 →</div></div>
+      <div class="card-hover bg-gradient-to-br from-slate-800 to-slate-900 border border-emerald-900/30 rounded-2xl p-8"><span class="inline-block bg-emerald-900/60 text-emerald-400 text-xs px-3 py-1 rounded-full mb-4">设施园艺</span><h3 class="font-bold text-xl mb-3">设施农业解决方案</h3><p class="text-gray-400 leading-relaxed">温室大棚环境精准控制，蔬菜花卉种植增产提质，降低人工成本。</p><div class="mt-6 text-emerald-400 text-sm">了解详情 →</div></div>
+      <div class="card-hover bg-gradient-to-br from-slate-800 to-slate-900 border border-emerald-900/30 rounded-2xl p-8"><span class="inline-block bg-emerald-900/60 text-emerald-400 text-xs px-3 py-1 rounded-full mb-4">规模养殖</span><h3 class="font-bold text-xl mb-3">畜禽养殖解决方案</h3><p class="text-gray-400 leading-relaxed">智能巡检、环境监控、疫病预警，助力规模化标准化养殖管理。</p><div class="mt-6 text-emerald-400 text-sm">了解详情 →</div></div>
+      <div class="card-hover bg-gradient-to-br from-slate-800 to-slate-900 border border-emerald-900/30 rounded-2xl p-8"><span class="inline-block bg-emerald-900/60 text-emerald-400 text-xs px-3 py-1 rounded-full mb-4">乡村振兴</span><h3 class="font-bold text-xl mb-3">数字乡村综合平台</h3><p class="text-gray-400 leading-relaxed">政务、农务、商务一体化，打造智慧宜居数字乡村综合服务平台。</p><div class="mt-6 text-emerald-400 text-sm">了解详情 →</div></div>
+    </div>
+  </div>
+</section>
+<section id="about" class="py-24 px-4 bg-slate-800/30">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16"><h2 class="text-3xl font-bold mb-4">关于左岸芯慧</h2></div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-gray-300 leading-relaxed mb-6">安徽左岸芯慧信息科技有限公司，总部位于安徽合肥，是一家专注于农业物联网、智慧农业和数字乡村建设的高新技术企业。</p>
+        <p class="text-gray-400 leading-relaxed mb-8">公司汇聚农业、信息技术、人工智能等领域的专业人才，致力于将前沿技术应用于农业生产实践，推动传统农业向现代化、数字化转型升级。</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-slate-800 rounded-xl p-4 border border-white/5"><div class="text-emerald-400 font-bold text-xl">20+人</div><div class="text-gray-400 text-sm mt-1">核心技术团队</div></div>
+          <div class="bg-slate-800 rounded-xl p-4 border border-white/5"><div class="text-emerald-400 font-bold text-xl">50+个</div><div class="text-gray-400 text-sm mt-1">已落地项目</div></div>
+          <div class="bg-slate-800 rounded-xl p-4 border border-white/5"><div class="text-emerald-400 font-bold text-xl">5000+户</div><div class="text-gray-400 text-sm mt-1">服务农户</div></div>
+          <div class="bg-slate-800 rounded-xl p-4 border border-white/5"><div class="text-emerald-400 font-bold text-xl">2018年</div><div class="text-gray-400 text-sm mt-1">成立年份</div></div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-gradient-to-br from-emerald-900/40 to-slate-800 border border-emerald-800/30 rounded-xl p-6 text-center"><div class="text-3xl mb-2">🏆</div><div class="text-sm text-gray-300">国家高新技术企业</div></div>
+        <div class="bg-gradient-to-br from-emerald-900/40 to-slate-800 border border-emerald-800/30 rounded-xl p-6 text-center"><div class="text-3xl mb-2">🔬</div><div class="text-sm text-gray-300">省级研发中心</div></div>
+        <div class="bg-gradient-to-br from-emerald-900/40 to-slate-800 border border-emerald-800/30 rounded-xl p-6 text-center"><div class="text-3xl mb-2">🤝</div><div class="text-sm text-gray-300">多项政府合作</div></div>
+        <div class="bg-gradient-to-br from-emerald-900/40 to-slate-800 border border-emerald-800/30 rounded-xl p-6 text-center"><div class="text-3xl mb-2">📱</div><div class="text-sm text-gray-300">自主研发平台</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="py-24 px-4 bg-gradient-to-b from-slate-900 to-emerald-950/20">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">联系我们</h2>
+    <p class="text-gray-400 mb-12">欢迎了解更多产品信息，我们将在24小时内回复您</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-slate-800 border border-white/5 rounded-2xl p-6"><div class="text-3xl mb-3">📍</div><div class="font-semibold mb-1">公司地址</div><div class="text-gray-400 text-sm">安徽省合肥市</div></div>
+      <div class="bg-slate-800 border border-white/5 rounded-2xl p-6"><div class="text-3xl mb-3">📞</div><div class="font-semibold mb-1">联系电话</div><div class="text-gray-400 text-sm">400-xxx-xxxx</div></div>
+      <div class="bg-slate-800 border border-white/5 rounded-2xl p-6"><div class="text-3xl mb-3">✉️</div><div class="font-semibold mb-1">邮箱</div><div class="text-gray-400 text-sm">info@zuoan-tech.com</div></div>
+    </div>
+    <a href="mailto:info@zuoan-tech.com" class="inline-block bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-10 py-4 rounded-xl transition-all">立即联系我们</a>
+  </div>
+</section>
+<footer class="border-t border-white/10 py-8 px-4 text-center text-gray-500 text-sm">
+  <p>© 2024 安徽左岸芯慧信息科技有限公司 版权所有</p>
+</footer>
+</body>
+</html>
